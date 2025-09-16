@@ -12,7 +12,10 @@ A Python-based web scraper for extracting blog content from various sources. Fea
   - Direct HTML parsing
   - API endpoint access
   - JavaScript rendering
-  - Next.js data extraction
+
+## Current Limitations
+
+- Next.js websites: We are actively working on improving support for Next.js-based websites. Some content from Next.js sites might not be fully scraped due to their client-side rendering nature.
 
 ## Installation
 
@@ -37,7 +40,7 @@ python app.py
 This will:
 1. Start a web server at http://localhost:5000
 2. Open your browser and navigate to http://localhost:5000
-3. Enter a URL to scrape (e.g., https://quill.co/blog)
+3. Enter a URL to scrape
 4. Set the maximum number of pages to scrape
 5. Click "Scrape" to start
 6. Download the results as JSON
@@ -46,7 +49,6 @@ This will:
 
 - `app.py` - Main web application and entry point
 - `scraper.py` - Core scraping utilities and functions
-- `quill_blogs_scraper.py` - Specific scraper for Quill blog
 - `requirements.txt` - Python dependencies
 - `*.json` - Scraped data output files
 
